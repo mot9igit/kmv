@@ -1,7 +1,7 @@
 --------------------
 kmv
 --------------------
-Author: John Doe <john@doe.com>
+Author: Petropavlovsky Artiom <info@dart.agency>
 --------------------
 
-A basic Extra for MODx Revolution.
+A KMV Extra for MODx Revolution.

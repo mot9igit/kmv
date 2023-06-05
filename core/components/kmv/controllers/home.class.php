@@ -15,7 +15,8 @@ class kmvHomeManagerController extends modExtraManagerController
      */
     public function initialize()
     {
-        $this->kmv = $this->modx->getService('kmv', 'kmv', MODX_CORE_PATH . 'components/kmv/model/');
+        $corePath = $this->modx->getOption('kmv_core_path', array(), $this->modx->getOption('core_path') . 'components/kmv/');
+        $this->kmv = $this->modx->getService('kmv', 'kmv', $corePath . 'model/');
         parent::initialize();
     }
 

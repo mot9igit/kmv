@@ -11,7 +11,7 @@ if (!defined('MODX_CORE_PATH')) {
 return [
     'name' => 'kmv',
     'name_lower' => 'kmv',
-    'version' => '2.0.0',
+    'version' => '0.0.1',
     'release' => 'pl',
     // Install package to site right after build
     'install' => true,

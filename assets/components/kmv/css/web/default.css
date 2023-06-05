@@ -1,0 +1,55 @@
+@-webkit-keyframes spinner-border {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner-border {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+.dart-btn{
+    position: relative;
+}
+.dart-btn.dart-btn-loading {
+    position: relative;
+    color: rgba(0, 0, 0, 0);
+}
+
+.dart-btn.dart-btn-loading:hover {
+    color: rgba(0, 0, 0, 0);
+}
+
+.dart-btn.dart-btn-loading::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -0.5rem;
+    margin-top: -0.5rem;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: -0.125em;
+    border: 0.2em solid rgba(51, 51, 51, 0.5);
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: .75s linear infinite spinner-border;
+    animation: .75s linear infinite spinner-border;
+}
+.kmv-message{
+    display: none;
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.kmv-error{
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}

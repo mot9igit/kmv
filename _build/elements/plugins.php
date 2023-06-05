@@ -5,7 +5,7 @@ return [
         'file' => 'kmv',
         'description' => '',
         'events' => [
-            'OnManagerPageInit' => [],
+            'OnLoadWebDocument' => [],
         ],
     ],
 ];
